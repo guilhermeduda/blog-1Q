@@ -56,6 +56,8 @@
        <hr style="border: 0; border-top: 2px solid #1900ff; margin: 30px auto; max-width: 90%; opacity: 0.5;"> 
         <h2>⚠️O que é a desinformação?</h2>
         <p>A desinformação é um conjunto de práticas enganosas, falsas ou fora de contexto com o objetivo de enganar pessoas e/ou influenciar suas opiniões ou comportamentos.</p>
+        <button>👍<span>0</span></button>
+
         <hr style="border: 0; border-top: 2px solid #1900ff; margin: 30px auto; max-width: 90%; opacity: 0.5;">
         <h2>☠️Consequências</h2>
         <ul>
@@ -87,8 +89,13 @@
 </div>
     </main>
 </body>
+<script>
+const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+
 function botaoClicado() {
 let texto = botao.querySelector("span");
 texto.textContent++;
 }
+</script>
 </html>
