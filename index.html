@@ -64,7 +64,7 @@ botoes.forEach(function(botao) {
 botao.addEventListener("click", botaoClicado);
 
 function botaoClicado() {
-let texto = botao.querySelectorAll("span");
+let texto = botao.querySelector("span");
 if (curtiu === false) {
 texto.textContent++;
 curtiu = true;
